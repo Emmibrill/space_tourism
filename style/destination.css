@@ -1,0 +1,262 @@
+body{
+    background: url(../destination/background-destination-desktop.jpg) repeat scroll 0 0 #121210;
+    background-position: left;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    
+}
+#des__nav::after{
+    transform: scale(1);
+    transform-origin: right;
+}
+h3{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    line-height: 1.1rem;
+    text-transform: uppercase;
+    color: var(--text-color-blur);
+}
+.destination__section{
+    display: block;
+    margin-left: 10rem;
+    margin-top: -1.5rem;
+}
+.destination__heading{
+    margin: 3rem 0;
+}
+.destination__spn{
+    margin-right: 1rem;
+    color: var(--pick-des-color);
+    font-weight: 700;
+}
+.destination__nav{
+    width: 27%;
+    margin-left: 50%;
+    text-align: ;
+}
+.destination__navtabs{
+    width: 27%;
+    padding-bottom:  1.3rem;
+}
+.destination__navtabs ul{
+    display: inline-flex;
+    right: 0;
+    margin-inline-end: 1rem;
+}
+.destination__navtabs ul li{
+    margin-inline-end: 1rem;
+    color: var(--text-color1);;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: .5rem;
+    cursor: pointer;
+}
+.destination__tab::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: .18rem;
+    bottom: 0;
+    left: 0;
+    background: var(--text-color-pure);
+    transform: scale(0);
+    transform-origin: left;
+    transition: .4s;
+}
+.destination__tab.moon::after{
+    transform: scale(1);
+}
+.destination__tab.Activemoon, .destination__tab:hover::after{
+    transform: scale(1);
+    transform-origin: right;
+}
+.activE::after{
+    transform: scale(1);
+    transform-origin: right;
+}
+
+.destination__content{
+    display: grid;
+    grid-template-columns: 35% 35%;
+    grid-gap: 14rem;
+}
+.destination__details{
+    display: block;
+}
+.destinaton__image img{
+    height: 24.5rem;
+}
+.destinaton__name{
+    font-size: 5rem;
+    text-transform: uppercase;
+    line-height: 5rem;
+    letter-spacing: 2px;
+    color: var(--text-color-pure);
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.destination__description{
+    border-bottom: 1px solid var(--pick-des-color);
+    padding-bottom: 2.5rem;
+    width: 90%;
+}
+.destination__description h4{
+    color: var(--text-color1);
+    line-height: 1.5rem;
+    font-weight: 100;
+    font-size: 1rem;
+}
+.destination__duration{
+    margin-top: 1rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.duration{
+    display: block;
+}
+.title{
+    margin-bottom: .7rem;
+}
+.title h5{
+    color: var(--text-color-blur);
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+.distance h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--text-color1);
+}
+.destination__section .destination__content[data-content]{
+    display: none;
+}
+.destination__section .description__active[data-content]{
+    display: grid;
+}
+@media (max-width:1088px) {
+    .destination__duration{
+        margin-bottom: 5rem;
+    }
+    .destination__description h4{
+       width: 100%;
+    }
+    .destination__description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .destinaton__name{
+        margin: 3rem 0 3rem
+    }
+    .destination__navtabs ul li{
+        margin-inline-end: 2rem;
+        padding-bottom: .5rem;
+    }
+    .destination__navtabs{
+        width: 100%;
+        padding-bottom:  1.3rem;
+        display: block;
+        text-align: center;
+    }
+    .destination__section .destination__nav{
+        position: relative;
+        display: block;
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+        top: 26rem;
+    }
+    .destinaton__image img{
+        height: 20rem;
+    }
+    .destination__heading{
+        padding-left: 3rem;
+    }
+    .destination__details{
+        display: block;
+        text-align: center;
+    }
+    .destination__section .description__active[data-content]{
+        display: none;
+    }
+    .destination__section .description__active[data-content]{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .destination__section{
+        display: block;
+        margin: 0;
+    }
+    body{
+        background: url(../destination/background-destination-tablet.jpg) repeat scroll 0 0 #121210;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+    }
+}
+@media (max-width:724px) {
+    body{
+        background: url(../destination/background-destination-tablet.jpg) repeat scroll 0 0 #121210;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+       
+        -webkit-backface-visibility: hidden;
+    }
+}
+@media (max-width:425px) {
+    .distance h3{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .title h5{
+        color: var(--text-color-blur);
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    .title{
+        margin-bottom: 2rem;
+    }
+    .duration{
+        display: block;
+        margin-bottom: 4rem;
+    }
+    .destination__duration{
+        margin-top: 1rem;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    body{
+        background: url(../destination/background-destination-mobile.jpg) repeat scroll 0 0 #121210;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 25rem;
+    }
+}
+@media (max-width:400px) {
+    .home__section .nav__toggle{
+        top: 2rem;
+        right: 1rem;
+    }
+}
+@media (max-width:375px) {
+    .home__section .nav__toggle{
+        top: 2rem;
+        right: 0;
+    }
+}

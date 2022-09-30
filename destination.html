@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destination</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/destination.css">
+</head>
+<body>
+    <!--====home section===-->
+    <div class="home__section">
+
+        <!--===navigation section===-->
+        <section class="navigation__section">
+            <div class="nav__wrapper">
+                <div class="icon__container">
+                    <img src="shared/logo.svg" alt="">
+                </div>
+                <div class="nav__section">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="active" target="_self"><span aria-hidden="true" class="nav__number">00</span> home</a></li>
+                            <li><a href="destination.html" id="des__nav" target="_top"><span aria-hidden="true" class="nav__number">01</span>destination</a></li>
+                            <li><a href="crew.html"><span aria-hidden="true" class="nav__number">02</span>crew</a></li>
+                            <li><a href="technology.html"><span aria-hidden="true" class="nav__number">03</span>technology</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </section>
+        <button class="nav__toggle" aria-expanded="false"></button>
+        <section class="destination__section">
+
+            <div class="destination__heading">
+                <h3><span class="destination__spn" aria-hidden="true">01</span>Pick your destination</h3>
+            </div>
+
+            <div class="destination__nav">
+                <div class="destination__navtabs">
+                    <ul>
+                        <li class="destination__tab moon" data-target="#moon">moon</li>
+                        <li class="destination__tab mars" data-target="#mars">mars</li>
+                        <li class="destination__tab europa" data-target="#europa">europa</li>
+                        <li class="destination__tab titan" data-target="#titan">titan</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="destination__content description__active" data-content id="moon">
+                <div class="destinaton__image">
+                    <img src="destination/image-moon.png" alt="moon">
+                </div>
+                <div class="destination__details">
+                    <div class="descriptionLeft__pane description__active">
+                        <div class="destination__title">
+                            <h2 class="destinaton__name">moon</h2>
+                        </div>
+        
+                        <div class="destination__description">
+                            <h4>See our planet as you’ve never seen it before. 
+                                A perfect relaxing trip away to help regain perspective 
+                                and come back refreshed. While you’re there, take in some 
+                                history by visiting the Luna 2 and Apollo 11 landing sites.
+                            </h4>
+                        </div>
+        
+                        <div class="destination__duration">
+                            <div class="duration">
+                                <div class="title">
+                                    <h5>Avg. distance</h5>
+                                </div>
+                                <div class="distance">
+                                    <h3>384,400 km</h3>
+                                </div>
+                            </div>
+                            <div class="duration">
+                                <div class="title">
+                                    <h5>Est. travel time</h5>
+                                </div>
+                                <div class="distance">
+                                    <h3>3 days</h3>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="destination__content" data-content id="mars">
+                <div class="destinaton__image">
+                    <img src="destination/image-mars.png" alt="mars">
+                </div>
+                <div class="destination__details">
+
+                    <div class="descriptionLeft__pane" data-content id="mars">
+                        <div class="destination__title">
+                            <h2 class="destinaton__name">mars</h2>
+                        </div>
+        
+                        <div class="destination__description">
+                            <h4>Don’t forget to pack your hiking boots. 
+                                You’ll need them to tackle Olympus Mons, 
+                                the tallest planetary mountain in our solar 
+                                system. It’s two and a half times the size of Everest!</h4>
+                        </div>
+        
+                        <div class="destination__duration">
+                            <div class="duration">
+                                <div class="title">
+                                    <h5>Avg. distance</h5>
+                                </div>
+                                <div class="distance">
+                                    <h3>225 mil. km</h3>
+                                </div>
+                            </div>
+                            <div class="duration">
+                                <div class="title">
+                                    <h5>Est. travel time</h5>
+                                </div>
+                                <div class="distance">
+                                    <h3>9 months</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="destination__content" data-content id="europa">
+                <div class="destinaton__image">
+                    <img src="destination/image-europa.png" alt="europa">
+                </div>
+                <div class="destination__details">
+                    <div class="descriptionLeft__pane" data-content id="europa">
+                        <div class="destination__title">
+                            <h2 class="destinaton__name">europa</h2>
+                        </div>
+        
+                        <div class="destination__description">
+                            <h4>The smallest of the four Galilean moons orbiting Jupiter, 
+                                Europa is a winter lover’s dream. With an icy surface, it’s 
+                                perfect for a bit of ice skating, curling, hockey, or simple 
+                                relaxation in your snug wintery cabin.
+                            </h4>
+                        </div>
+        
+                        <div class="destination__duration">
+                            <div class="duration">
+                                <div class="title">
+                                    <h5>Avg. distance</h5>
+                                </div>
+                                <div class="distance">
+                                    <h3>628 mil. km</h3>
+                                </div>
+                            </div>
+                            <div class="duration">
+                                <div class="title">
+                                    <h5>Est. travel time</h5>
+                                </div>
+                                <div class="distance">
+                                    <h3>3 years</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="destination__content" data-content id="titan">
+                <div class="destinaton__image">
+                    <img src="destination/image-titan.png" alt="titan">
+                </div>
+                <div class="destination__details">
+                    <div class="descriptionLeft__pane" data-content id="titan">
+                        <div class="destination__title">
+                            <h2 class="destinaton__name">titan</h2>
+                        </div>
+        
+                        <div class="destination__description">
+                            <h4>The only moon known to have a dense atmosphere other 
+                                than Earth, Titan is a home away from home (just a few 
+                                hundred degrees colder!). As a bonus, you get striking 
+                                views of the Rings of Saturn.
+                            </h4>
+                        </div>
+        
+                        <div class="destination__duration">
+                            <div class="duration">
+                                <div class="title">
+                                    <h5>Avg. distance</h5>
+                                </div>
+                                <div class="distance">
+                                    <h3>61.6 bil. km</h3>
+                                </div>
+                            </div>
+                            <div class="duration">
+                                <div class="title">
+                                    <h5>Est. travel time</h5>
+                                </div>
+                                <div class="distance">
+                                    <h3>7 years</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+        <script src="script/main.js"></script> 
+        <script src="script/destination.js"></script>
+</body>
+</html>

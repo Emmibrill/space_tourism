@@ -1,0 +1,312 @@
+:root{
+    --crew-tag-color: hsla(0, 9%, 87%, 0.61);
+}
+body{
+    background: url(../crew/background-crew-desktop.jpg) repeat scroll 0 0 #121210;
+    background-position: left;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+}
+#crew__nav::after{
+    transform: scale(1);
+    transform-origin: right;
+}
+h3{
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    line-height: 1.1rem;
+    text-transform: uppercase;
+    color: var(--text-color-blur);
+}
+.crew__section{
+    display: block;
+    margin-left: 10rem;
+    margin-top: 1rem;
+}
+.crew__heading{
+    margin: 3rem 0;
+}
+.crew__spn{
+    margin-right: 1rem;
+    color: var(--pick-des-color);
+    font-weight: 700;
+}
+.crew__details{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    gap: 5rem;
+    padding: 0 10rem;
+    padding-right: 12rem;
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.swiper-pagination{
+    height: 5rem;
+    display: flex;
+    padding: 1rem;
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+}
+.swiper-pagination-bullet{
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--text-color-pure);
+}
+.crew__content .crew__details .crew__image{
+    display: grid;
+    width: 30rem;
+    height: 100%;
+
+}
+.crew__image img{
+    width: 30rem;
+    height: 30rem;
+    background-color: lue;
+}
+.crew__position .crew-position__tag{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+.crew__position .crew-position__tag h2{
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    color: var(--crew-tag-color);
+}
+.crew__names .crew__name{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.crew__names .crew__name h2{
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: var(--text-color-pure);
+}
+.crew__information .crew__about{
+    width: 70%;
+}
+.crew__information .crew__about h4{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 100;
+    color: var(--text-color-blur);
+}
+@media (max-width:1088px) {
+    .swiper-pagination{
+        position: absolute;
+        margin-left: 0;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+        top: 15.5rem;
+        right: 0;
+        height: 1rem;
+        display: flex;
+        padding: 1rem;
+    }
+    .crew__image img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 30rem;
+        height: 30rem;
+    }
+    .crew__content .crew__details .crew__image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30rem;
+        height: 100%;
+        margin-bottom: -1.5rem;
+    }
+    .crew__information .crew__about h4{
+        font-size: 1rem;
+        line-height: 1.4rem;
+        width: 100%;
+        margin: auto;
+    }
+    .crew__information .crew__about{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+    .crew__names .crew__name{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .crew__position .crew-position__tag h2{
+        font-size: 1.6rem;
+        font-weight: 100;
+        line-height: 1.6rem;
+    }
+    .crew__position .crew-position__tag{
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .crew__details{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .crew__section{
+        display: flex;
+        flex-direction: column;
+        margin-top: -1.5rem;
+    }
+    body{
+        background: url(../crew/background-crew-tablet.jpg) repeat scroll 0 0 #121210;
+        background-position: left;
+        background-size: cover;
+        -webkit-backface-visibility: hidden;
+        height: 100%;
+    }
+}
+@media (max-width:897px) {
+    .crew__names .crew__name h2{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .crew__content .crew__details .crew__image{
+        margin-bottom: -3rem;
+    }
+}
+@media (max-width:878px) {
+    .crew__names .crew__name h2{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+@media (max-width:814px) {
+    .crew__names .crew__name h2{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
+@media (max-width:804px) {
+    .crew__names .crew__name h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+@media (max-width:705px) {
+    .crew__information .crew__about{
+        width: 70vw;
+        text-align: center;
+        margin-bottom: 6rem;
+        margin-left: auto;
+    }
+    .crew__names .crew__name h2{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+}
+@media (max-width:609px) {
+    .crew__section{
+        margin-left: -2rem;
+        text-align: center;
+    }
+}
+@media (max-width:521px) {
+    .crew__image .Douglas{
+        width: 24rem;
+        height: 23rem;
+    }
+    .crew__image img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 20rem;
+        height: 20rem;
+    }
+    .home__section .crew__content .crew__details .crew__Douglas{
+        width: 22rem;
+        height: 20rem;
+    }
+    .crew__content .crew__details .crew__image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20rem;
+        height: 100%;
+        margin-bottom: -1.5rem;
+    }
+    
+}
+@media (max-width:425px) {
+    .swiper-pagination{
+        top: 23.5rem;
+    }
+    .crew__information .crew__about{
+        margin-bottom: 4rem;
+    }
+    .crew__image .Douglas{
+        width: 24rem;
+        height: 23rem;
+    }
+    .crew__image img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 20rem;
+        height: 20rem;
+
+    }
+    .home__section .crew__content .crew__details .crew__Douglas{
+        width: 22rem;
+        height: 20rem;
+        transform: translateY();
+        
+    }
+    .crew__content .crew__details .crew__image{
+
+        margin-bottom: 5rem;
+    }
+    .crew__description{
+        margin-left: 2.23rem;
+    }
+    .crew__details{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    body{
+        background: url(../crew/background-crew-mobile.jpg) repeat scroll 0 0 #121210;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media (max-width:375px) {
+    .swiper-pagination{
+        top: 21rem;
+    }
+    .crew__image .Douglas{
+        width: 19rem;
+        height: 19rem;
+    }
+    .crew__image img{
+        width: 18rem;
+        height: 18rem;
+
+    }
+    .home__section .crew__content .crew__details .crew__Douglas{
+        width: 19rem;
+        height: 19rem;
+        
+        margin-left: 4rem;
+    }
+    .crew__content .crew__details .crew__image{
+
+        margin-bottom: 5rem;
+    }
+    
+}
