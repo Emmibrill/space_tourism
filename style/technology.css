@@ -209,10 +209,19 @@ img[alt]{
         -webkit-backface-visibility: hidden;
     }
 }
+@media (max-width:679px) {
+    .vehicle__image{
+        height: 18rem;
+    }
+}
 @media (max-width:425px) {
     .tech__teminology .teminology__tag{
         margin-top: -1rem;
         margin-bottom: 1rem;
+    }
+    .vehicle__image{
+        height: 15rem;
+        width: 100%;
     }
     .technology__nav{
         width: 20rem;
@@ -220,6 +229,7 @@ img[alt]{
         margin-right: auto;
         position: relative;
         top: 14.9rem;
+        top: 19.4rem;
     }
     .technology__details{
         margin-bottom: 1.5rem;   
